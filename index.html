@@ -10,13 +10,18 @@
     <h1>Image Search Engine</h1>
 
     <div class="search-container">
-        <input type="text" id="search-box" placeholder="Search for images...">
-        <button id="search-btn">Search</button>
+        <div class="search-bar">
+            <input type="text" id="search-box" placeholder="Search for images..." autocomplete="off">
+            <button id="mic-btn" title="Voice Search">🎤</button>
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="autocomplete-dropdown" class="hidden"></div>
     </div>
 
     <div id="search-result" class="image-grid"></div>
 
     <button id="show-more-btn" style="display: none;">Show More</button>
+
    
 
     <script src="script.js"></script>
